@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWE SuperCard - Temporada 11</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="img/logo.png" alt="WWE SuperCard Logo" class="logo">
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#novedades">Novedades</a></li>
+                    <li><a href="#tienda">Tienda</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="menu-button">☰</button>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero" style="background-image: url('img/wwe.jpeg'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="hero-content">
+            <h1>¡Bienvenido a la Temporada 11 de WWE SuperCard!</h1>
+            <p>Explora las nuevas categorías: Metal, Ink, Invasion, Feral y Legion. ¡Domina el ring con tus Superstars favoritas!</p>
+            <a href="https://play.google.com/store/apps/details?id=com.catdaddy.cat22&gl=US" class="cta-button">Descargar ahora</a>
+        </div>
+    </section>
+
+    <section id="novedades" class="categories">
+        <h2>Nuevas Categorías en la Temporada 11</h2>
+        <div class="category-list">
+            <div class="category">
+                <h3>Metal</h3>
+                <img src="img/metal.jpeg" alt="Metal Category">
+                <p>¡Potencia tus cartas con esta nueva categoría llena de fuerza!</p>
+            </div>
+            <div class="category">
+                <h3>Ink</h3>
+                <img src="img/ink.jpeg" alt="Ink Category">
+                <p>Expresa tu estilo con las cartas de Ink, ¡solo para los más atrevidos!</p>
+            </div>
+            <div class="category">
+                <h3>Invasion</h3>
+                <img src="img/invasion.jpeg" alt="Invasion Category">
+                <p>Prepárate para la invasión. ¡Lleva tus cartas a otro nivel!</p>
+            </div>
+            <div class="category">
+                <h3>Feral</h3>
+                <img src="img/feral.jpeg" alt="Feral Category">
+                <p>¡Desata tu lado salvaje con las cartas Feral!</p>
+            </div>
+            <div class="category">
+                <h3>Legion</h3>
+                <img src="img/legion.jpeg" alt="Legion Category">
+                <p>Únete a la legión y domina el juego con estas poderosas cartas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tienda" class="hero" style="background-image: url('img/wwe.jpeg'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="hero-content">
+            <h1>Tienda Oficial</h1>
+            <p>Compra cartas, mejoras y más en la tienda oficial de WWE SuperCard.</p>
+            <a href="https://www.wwesupercard.com/es" class="cta-button">Visitar Tienda</a>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact-section">
+        <div class="contact-content">
+            <h1>Contacto</h1>
+            <form id="contact-form" action="#" method="post" class="contact-form">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                <button type="submit" class="cta-button">Enviar</button>
+            </form>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/officialwwesupercard">
+                    <img src="icons\facebook.png" alt="Facebook" width="34" height="34">
+                  </a>
+                <a href="https://x.com/WWESuperCard">
+                    <img src="icons\x.png" alt="X" width="34" height="34">
+                  </a>
+                  <a href="https://www.instagram.com/wwesupercard/">
+                    <img src="icons\instagram.png" alt="Instagram" width="34" height="34">
+                  </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 WWE SuperCard | Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.querySelector('.menu-button');
+            const navUl = document.querySelector('.navbar ul');
+
+            menuButton.addEventListener('click', function() {
+                menuButton.classList.toggle('active');
+                navUl.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
